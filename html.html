@@ -1,0 +1,116 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" type="image/ico" href="favicon.gif" />
+  <link rel="stylesheet" type="text/css" href="css/global.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+  <link rel="shortcut icon" type="image/x-icon" href="images/me.ico" />
+  <title>o shit waddup</title>
+  <script src="http://api.flickr.com/services/rest/?method=flickr.photos.search&api_key={3269bc9b9cd8ac1a2c885a57c0facdc1}&tags=flower&per_page=3&format=json"></script>
+  <script type="text/javascript">
+    google.load('search', '1');
+    google.setOnLoadCallback(OnLoad);
+    var search;
+
+    var keyword = 'Technology';
+
+    function OnLoad() {
+      var flickr = new Flickr("3269bc9b9cd8ac1a2c885a57c0facdc1", "32e5277b0b7e4df9");
+
+      var options = new PhotoSearchOptions();
+
+      options.tagMode = TagMode.AnyTag();
+
+      options.Tag = keyword;
+    }
+
+    function searchComplete() {
+      if (search.results && search.results.length > 0) {
+
+        var rnd = Math.floor(Math.random() * search.results.length);
+
+        document.body.style.backgroundImage = "url('" + search.results[rnd].tbUrl() + "); ";
+      }
+    }
+  </script>
+  <style>
+    body {
+      text-shadow : 1px 1px white;
+      color : black;
+      text-align: left;
+      background-image: url("http://68.media.tumblr.com/tumblr_mbixduFBza1qh7gfao1_500.gif");
+      background-image: url("https://i.giphy.com/media/6sp34knQcM45W/source.gif");
+      background-image: url("http://38.media.tumblr.com/tumblr_m35uqeEVF31qzw1qyo1_500.gif");
+      background-position: 190,20;
+      background-repeat: repeat;
+      height: wrap;
+      width: wrap;
+    }
+
+    .container {
+      text-align: left;
+    }
+
+    .png {
+      height: 30;
+      width: 30;
+    }
+
+    d:hover {
+      height: 40;
+      width: 40;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <h1>Welcome Home, Internet Boy</h1>
+      <div class="col-md-6">
+        <h3>Video</h3>
+        <dl>
+          <a href="https://youtube.com"><img src="images/youtube.png" class="png"></img></a>
+          <a href="https://netflix.com"><img src="images/netflix.png" height="30" width="40"></img></a>
+          <a href="https://hulu.com"><img src="images/hulu.png" height="15" width="35"></img></a>
+        </dl>
+
+        <h3>Social</h3>
+        <dl>
+          <a href="https://twitter.com/"><img src="images/Twitter.png" class="png"></a>
+          <a href="https://www.plus.google.com"><img src="images/plus.png" class="png"></a>
+          <a href="https://www.tumblr.com"><img src="images/tumblr.png" class="png"></a>
+        </dl>
+        <h3><a href="https://en.wikipedia.org/wiki/Special:Random">Wikis</a></h3>
+        <dt><a href="https://wikipedia.org">wikipedia</a></dt>
+        <dt><a href="https://www.thinkwiki.org">thinkwiki</a></dt>
+
+        <h3>Boards/Boreds</h3>
+        <dl>
+          <dt><a href="https://reddit.com"><img src="images/reddit.png" class="png"></a></dt>
+          <dd><a href="https://www.reddit.com/user/strranger101">u/[me]</a></dd>
+          <dd><a href="https://reddit.com/r/funny">r/funny</a></dd>
+          <dd><a href="https://reddit.com/r/CrappyDesign">r/CrappyDesign</a></dd>
+          <dd><a href="https://reddit.com/r/Android">r/Android</a></dd>
+          <dd><a href="https://reddit.com/r/progresspics">r/progresspics</a></dd>
+          <dd><a href="https://reddit.com/r/technology">r/technology</a></dd>
+          <dd><a href="https://reddit.com/r/thinkpad">r/thinkpad</a></dd>
+          <dt><a href="https://4chan.org"><img src="images/chan.png" class="png"></a></dt>
+          <dd><a href="https://4chan.org/g/catalog">/g/</a></dd>
+          <dd><a href="https://4chan.org/v/catalog">/v/</a></dd>
+          <dd><a href="https://4chan.org/pol/catalog">/pol/</a></dd>
+        </dl>
+        <br>
+      </div>
+      <div class="col-md-6">
+        <h3>School Stuff</h3>
+        <a href="https://asulearn.appstate.edu"><img src="images/app.png" class="png"></img></a>
+	<a href="https://todoist.com"><img src="images/todo.png" class="png"></img></a>
+	<h3>Personal Stuff</h3>
+	<a href="../../../Journal/Home.html">My Journal</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
