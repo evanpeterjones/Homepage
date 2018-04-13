@@ -5,48 +5,18 @@
   <link rel="stylesheet" type="text/css" href="css/global.css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
   <link rel="shortcut icon" type="image/x-icon" href="images/me.ico" />
-  <title>o shit waddup</title>
-  <script src="http://api.flickr.com/services/rest/?method=flickr.photos.search&api_key={3269bc9b9cd8ac1a2c885a57c0facdc1}&tags=flower&per_page=3&format=json"></script>
+  <title>Internet.com</title>
 
-  <!--not a currently functioning script, intended to set background to a random image from online-->
-											  
-  <script type="text/javascript">
-    google.load('search', '1');
-    google.setOnLoadCallback(OnLoad);
-    var search;
-
-
-    var keyword = 'Tech';    function OnLoad() {
-
-      var flickr = new Flickr("3269bc9b9cd8ac1a2c885a57c0facdc1", "32e5277b0b7e4df9");
-
-      var options = new PhotoSearchOptions();
-
-      options.tagMode = TagMode.AnyTag();
-
-      options.Tag = keyword;
-    }
-
-    function searchComplete() {
-      if (search.results && search.results.length > 0) {
-
-        var rnd = Math.floor(Math.random() * search.results.length);
-
-        document.body.style.backgroundImage = "url('" + search.results[rnd].tbUrl() + "); ";
-      }
-    }
-  </script>
   <style>
     body {
       text-shadow : 1px 1px #040000;
-      background-color : #004059;
+      background-color : #190F10;
       color: white;
       text-align: left;
       background-image: url("http://68.media.tumblr.com/tumblr_mbixduFBza1qh7gfao1_500.gif");
       background-image: url("https://i.giphy.com/media/6sp34knQcM45W/source.gif");
       background-image: url("http://38.media.tumblr.com/tumblr_m35uqeEVF31qzw1qyo1_500.gif");
-      background-image: url("http://33.media.tumblr.com/a8432170acee20e1ce815b73849c5f2f/tumblr_nh3r30BRzw1tw8np6o1_r1_500.gif");
-      background-position: 220,20;
+      background-position: bottom, right;
       background-repeat: no-repeat;
       height: wrap;
       width: wrap;
@@ -73,8 +43,9 @@
     <div class="row">
       <h1>Welcome Home, Internet Boy</h1>
       <div class="col-md-6">
-        <h3>Makin' Stuff</h3>
+        <h3>Doin' Stuff</h3>
           <a href="https://drive.google.com"><img src="images/drive.png" class="png"></img></a>
+          <a href="https://mail.google.com"><img src="images/gmail.png" class="png"></img></a>
         <h3>Video</h3>
         <dl>
           <a href="https://youtube.com"><img src="images/youtube.png" class="png"></img></a>
@@ -111,10 +82,12 @@
       </div>
       <div class="col-md-6">
         <h3>School Stuff</h3>
-        <a href="https://asulearn.appstate.edu"><img src="images/app.png" class="png"></img></a>
-	<a href="https://todoist.com"><img src="images/todo.png" class="png"></img></a>
-	<h3>Personal Stuff</h3>
-	<a href="../../../Journal/Home.html">My Journal</a>
+          <a href="https://asulearn.appstate.edu"><img src="images/app.png" class="png"></img></a>
+          <a href="https://todoist.com"><img src="images/todo.png" class="png"></img></a>
+	      <h3>Blogs</h3>
+	        <a href="https://www.evanpeterjones.com/">Relaxidaisical</a>
+          <p></p>
+          <a href="https://thelittleendian.blogspot.com/">The Little Endian</a>
       </div>
     </div>
   </div>
